@@ -4,9 +4,9 @@
       <top-bar />
       <hero-section />
       <movement />
+      <Footer></Footer>
     </div>
     <div class="content"></div>
-    <div class="footer"></div>
   </div>
 </template>
 
@@ -14,12 +14,14 @@
 import TopBar from "./components/TopBar.vue";
 import HeroSection from "./components/HeroSection.vue";
 import Movement from "./components/Movement.vue";
+import Footer from "./components/Footer.vue";
 export default {
   name: "App",
   components: {
     TopBar,
     HeroSection,
     Movement,
+    Footer
   },
 };
 </script>
