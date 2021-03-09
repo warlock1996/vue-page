@@ -3,7 +3,9 @@
     <div class="header">
       <top-bar />
       <hero-section />
-      <movement />
+      <movement-section />
+      <join-section />
+      <features-section />
     </div>
     <div class="content"></div>
     <div class="footer"></div>
@@ -13,15 +15,17 @@
 <script>
 import TopBar from "./components/TopBar.vue";
 import HeroSection from "./components/HeroSection.vue";
-import Movement from "./components/Movement.vue";
+import MovementSection from "./components/MovementSection.vue";
+import JoinSection from "./components/JoinSection.vue";
+import FeaturesSection from "./components/FeaturesSection.vue";
 export default {
   name: "App",
   components: {
     TopBar,
     HeroSection,
-    Movement,
+    MovementSection,
+    JoinSection,
+    FeaturesSection,
   },
 };
 </script>
-
-<style scoped></style>
