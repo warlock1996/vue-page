@@ -1,7 +1,7 @@
 <template>
   <vueper-slides
     class="no-shadow"
-    :visible-slides="4"
+    :visible-slides="5"
     slide-multiple
     :gap="1"
     :slide-ratio="1 / 4"
@@ -12,8 +12,7 @@
     <vueper-slide
       v-for="i in 5"
       :key="i"
-      :title="titles[i - 1]"
-      :image="require(`../assets/images/${i}.png`)"
+      :image="require(`../assets/images/media (${i}).png`)"
     />
   </vueper-slides>
 </template>
@@ -26,12 +25,7 @@ export default {
     VueperSlides,
     VueperSlide,
   },
-  data() {
-    return {
-      titles: ["PROFESSIONALS", "WOMAN", "MEN", "SENIOR", "CHILDRENS"],
-    };
-  },
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style></style>

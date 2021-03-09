@@ -12,6 +12,7 @@
       <video-section />
     </section>
     <Bar />
+    <media-carousel></media-carousel>
     <footer>
       <Footer></Footer>
     </footer>
@@ -26,6 +27,7 @@ import JoinSection from "./components/JoinSection.vue";
 import FeaturesSection from "./components/FeaturesSection.vue";
 import MovementCard from "./components/MovementCard.vue";
 import VideoSection from "./components/VideoSection.vue";
+import MediaCarousel from "./components/MediaCarousel.vue";
 import Bar from "./components/Bar.vue";
 import Footer from "./components/Footer.vue";
 export default {
@@ -38,6 +40,7 @@ export default {
     FeaturesSection,
     MovementCard,
     VideoSection,
+    MediaCarousel,
     Bar,
     Footer,
   },

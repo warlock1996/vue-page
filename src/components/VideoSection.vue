@@ -15,8 +15,14 @@
       </b-col>
     </b-row>
     <b-row align-h="between">
-      <b-col class="text-left">
+      <b-col class="text-left position-relative">
         <b-img :src="require('../assets/images/22.png')"></b-img>
+        <span class="text-spanner position-absolute">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book.
+        </span>
       </b-col>
       <b-col class="text-right">
         <b-img :src="require('../assets/images/11.png')"></b-img>
@@ -36,5 +42,10 @@ export default {};
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+}
+.text-spanner {
+  top: 50px;
+  left: 50px;
+  width: 400px;
 }
 </style>
