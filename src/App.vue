@@ -7,12 +7,12 @@
     <section>
       <movement-section />
       <join-section />
+      <feedback-carousel />
       <features-section />
-      <movement-card />
       <video-section />
+      <Bar />
+      <media-carousel></media-carousel>
     </section>
-    <Bar />
-    <media-carousel></media-carousel>
     <footer>
       <Footer></Footer>
     </footer>
@@ -28,6 +28,7 @@ import FeaturesSection from "./components/FeaturesSection.vue";
 import MovementCard from "./components/MovementCard.vue";
 import VideoSection from "./components/VideoSection.vue";
 import MediaCarousel from "./components/MediaCarousel.vue";
+import FeedbackCarousel from "./components/FeedbackCarousel.vue";
 import Bar from "./components/Bar.vue";
 import Footer from "./components/Footer.vue";
 export default {
@@ -41,6 +42,7 @@ export default {
     MovementCard,
     VideoSection,
     MediaCarousel,
+    FeedbackCarousel,
     Bar,
     Footer,
   },
