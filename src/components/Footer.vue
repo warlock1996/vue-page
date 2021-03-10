@@ -89,7 +89,7 @@ info@cellercise.com -->
 
 <style lang="scss" scoped>
 .footer--section {
-  height: 600px;
+  min-height: 600px;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("../assets/images/Footer.png");
