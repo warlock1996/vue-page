@@ -7,7 +7,7 @@
       class="no-shadow "
       :visible-slides="3"
       :slide-ratio="1 / 4"
-      :gap="3"
+      :gap="4"
       :dragging-distance="70"
       :bullets="false"
       :arrows-outside="false"
@@ -43,7 +43,7 @@ export default {
 
 <style lang="scss" scoped>
 .feedback--carousel {
-  padding: 50px;
+  padding: 20px;
   background-image: url("../assets/images/BG.png");
   background-repeat: no-repeat;
   background-size: cover;

@@ -1,5 +1,5 @@
 <template>
-  <b-container class="features--section" fluid>
+  <b-container class="features--section p-5" fluid>
     <b-row class="align-items-start justify-content-center">
       <b-col md="3">
         <b-img

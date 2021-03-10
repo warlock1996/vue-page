@@ -81,6 +81,9 @@ export default {
 }
 
 .feedback--carousel {
+  .vueperslides__track {
+    overflow: visible;
+  }
   .vueperslide__content {
     background-color: var(--primary-clr);
     border-radius: 10px;
@@ -89,6 +92,12 @@ export default {
     padding: 20px;
     opacity: var(--opacity);
     text-align: left;
+    transition: transform 1s;
+  }
+  .vueperslide--active {
+    .vueperslide__content {
+      transform: scale(1.2);
+    }
   }
 }
 </style>
