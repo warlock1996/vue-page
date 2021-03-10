@@ -79,4 +79,16 @@ export default {
     }
   }
 }
+
+.feedback--carousel {
+  .vueperslide__content {
+    background-color: var(--primary-clr);
+    border-radius: 10px;
+    box-shadow: 0px 0px 1px 1px var(--section-bg-clr-light);
+    font-size: var(--fs-sm);
+    padding: 20px;
+    opacity: var(--opacity);
+    text-align: left;
+  }
+}
 </style>

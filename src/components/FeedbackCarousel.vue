@@ -1,15 +1,28 @@
 <template>
-  <vueper-slides
-    class="no-shadow"
-    :visible-slides="3"
-    :slide-ratio="1 / 4"
-    :gap="3"
-    :dragging-distance="70"
-    :bullets="false"
-    :arrows-outside="false"
-  >
-    <vueper-slide v-for="i in 6" :key="i" :content="content" />
-  </vueper-slides>
+  <b-container fluid class="feedback--carousel">
+    <h1 class="feedback--carousel--title text-center">
+      HEAR WHAT OUR CUSTOMERS SAY!
+    </h1>
+    <vueper-slides
+      class="no-shadow "
+      :visible-slides="3"
+      :slide-ratio="1 / 4"
+      :gap="3"
+      :dragging-distance="70"
+      :bullets="false"
+      :arrows-outside="false"
+    >
+      <vueper-slide
+        class="text-left"
+        v-for="i in 6"
+        :key="i"
+        :content="content"
+      />
+    </vueper-slides>
+    <b-button class="read-btn d-block mx-auto mt-4"
+      >Read More Testimonials</b-button
+    >
+  </b-container>
 </template>
 
 <script>
@@ -29,7 +42,20 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.__slide {
-  background: teal;
+.feedback--carousel {
+  padding: 50px;
+  background-image: url("../assets/images/BG.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  &--title {
+    font-size: var(--fs-lg);
+    color: var(--primary-clr);
+  }
+}
+.read-btn {
+  background-image: none;
+  border: 1px solid var(--primary-clr);
+  background-color: var(--section-bg-clr);
 }
 </style>
