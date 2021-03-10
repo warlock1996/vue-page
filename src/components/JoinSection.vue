@@ -1,8 +1,8 @@
 <template>
-  <b-container class="join--section" fluid>
+  <b-container class="join--section py-4" fluid>
     <b-row>
       <b-col>
-        <h1 class="join--section--title text-center">
+        <h1 class="join--section--title text-center mb-4">
           Think it's not for you? Think again!
         </h1>
       </b-col>
@@ -48,10 +48,7 @@ export default {
     color: var(--secondary-clr);
   }
   &--bottom--image {
-    margin: {
-      top: 50px;
-      bottom: 50px;
-    }
+    margin-top: 80px;
     padding: 10px;
   }
   &--bottom--text {

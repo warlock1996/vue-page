@@ -1,8 +1,10 @@
 <template>
-  <b-container fluid class="movement--section">
+  <b-container fluid class="movement--section p-4 px-5">
     <b-row>
       <b-col>
-        <h1 class="movement--section--title text-center">JOIN THE MOVEMENT</h1>
+        <h1 class="movement--section--title mb-4 text-center">
+          JOIN THE MOVEMENT
+        </h1>
       </b-col>
     </b-row>
     <b-row>
@@ -22,7 +24,7 @@
     <b-row>
       <b-col>
         <b-img
-          class="mx-auto d-block"
+          class="mx-auto mt-5 d-block"
           :src="require('../assets/images/arrow.png')"
           alt="Fluid image"
         ></b-img>

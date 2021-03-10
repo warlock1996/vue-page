@@ -1,9 +1,12 @@
 <template>
   <b-container class="features--section" fluid>
-    <b-row>
+    <b-row class="align-items-start justify-content-center">
       <b-col md="3">
-        <b-img :src="require('../assets/images/18.png')"></b-img>
-        <h1>HEART HEALTHY</h1>
+        <b-img
+          class="features--section--image"
+          :src="require('../assets/images/18.png')"
+        ></b-img>
+        <h1 class="features--section--item--title">HEART HEALTHY</h1>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -12,8 +15,11 @@
         </p>
       </b-col>
       <b-col md="3">
-        <b-img :src="require('../assets/images/19.png')"></b-img>
-        <h1>TRI DATATABLE SPRING</h1>
+        <b-img
+          class="features--section--image"
+          :src="require('../assets/images/19.png')"
+        ></b-img>
+        <h1 class="features--section--item--title">TRI DATATABLE SPRING</h1>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -22,8 +28,11 @@
         </p>
       </b-col>
       <b-col md="3">
-        <b-img :src="require('../assets/images/20.png')"></b-img>
-        <h1>FOLDABLE DESIGN</h1>
+        <b-img
+          class="features--section--image"
+          :src="require('../assets/images/20.png')"
+        ></b-img>
+        <h1 class="features--section--item--title">FOLDABLE DESIGN</h1>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -32,8 +41,11 @@
         </p>
       </b-col>
       <b-col md="3">
-        <b-img :src="require('../assets/images/21.png')"></b-img>
-        <h1>STEEL CONSTRUCTION</h1>
+        <b-img
+          class="features--section--image"
+          :src="require('../assets/images/21.png')"
+        ></b-img>
+        <h1 class="features--section--item--title">STEEL CONSTRUCTION</h1>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -51,6 +63,13 @@ export default {};
 
 <style lang="scss" scoped>
 .features--section {
-  background-color: var(--section-bg-clr);
+  background-color: var(--primary-clr);
+  &--item--title {
+    color: var(--secondary-clr);
+    font-size: var(--fs-lg);
+  }
+  &--image {
+    margin-bottom: 10px;
+  }
 }
 </style>

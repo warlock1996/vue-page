@@ -48,3 +48,35 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+@use './assets/scss/_mixins.scss' as *;
+
+.vueperslides__arrow {
+  border: 3px solid var(--primary-clr);
+  border-radius: 50px;
+  @include gradient-one;
+  svg {
+    width: 50px;
+    height: 60px;
+  }
+}
+
+.vueperslides__arrow--prev {
+  left: 3rem;
+}
+.vueperslides__arrow--next {
+  right: 3rem;
+}
+
+.join--section {
+  div.vueperslide {
+    &__content-wrapper {
+      color: var(--primary-clr);
+      font-size: var(--fs-lg);
+      margin-top: -20px !important;
+      justify-content: flex-end !important;
+    }
+  }
+}
+</style>

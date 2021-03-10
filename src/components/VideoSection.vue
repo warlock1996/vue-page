@@ -1,8 +1,10 @@
 <template>
-  <b-container fluid class="video--section--container">
+  <b-container fluid class="video--section py-5 px-4">
     <b-row align-h="between">
       <b-col>
-        <h1>CELLERCISE IF FOR EVERY PART OF YOUR BODY</h1>
+        <h1 class="video--section--title">
+          CELLERCISE IF FOR EVERY PART OF YOUR BODY
+        </h1>
       </b-col>
       <b-col>
         <div class="d-flex justify-content-end align-items-center">
@@ -36,16 +38,23 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
-.video--section--container {
+.video--section {
   min-height: 900px;
   background-image: url("../assets/images/7.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  &--title {
+    color: var(--primary-clr);
+  }
 }
 .text-spanner {
   top: 50px;
   left: 50px;
   width: 400px;
+}
+
+.arrow-left {
+  background: red;
 }
 </style>

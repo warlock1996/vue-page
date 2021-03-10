@@ -18,6 +18,7 @@
       </b-col>
       <b-col>
         <b-img
+          class="arrow-animate"
           :src="require('../assets/images/arrow.png')"
           alt="Fluid image"
         ></b-img>
@@ -57,6 +58,24 @@ export default {
   }
   &--content {
     flex-grow: 0.2;
+  }
+}
+</style>
+
+<style>
+.arrow-animate {
+  animation: arrownim 2s infinite;
+}
+
+@keyframes arrowanim {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 </style>

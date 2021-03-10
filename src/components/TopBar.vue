@@ -12,7 +12,9 @@
     <b-collapse id="top-collapse" is-nav>
       <b-navbar-nav class="mx-auto">
         <b-nav-item href="#"
-          >BEST DEALS ON REBOUNDERS-<span>25% OFF</span></b-nav-item
+          >BEST DEALS ON REBOUNDERS-<span class="off-percent"
+            >25% OFF</span
+          ></b-nav-item
         >
       </b-navbar-nav>
 
@@ -43,3 +45,9 @@
 <script>
 export default {};
 </script>
+
+<style lang="scss" scoped>
+.off-percent {
+  color: var(--secondary-clr);
+}
+</style>

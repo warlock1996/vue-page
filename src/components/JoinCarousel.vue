@@ -10,6 +10,7 @@
     :arrows-outside="false"
   >
     <vueper-slide
+      class="join__carousel__slide"
       v-for="i in 5"
       :key="i"
       :title="titles[i - 1]"

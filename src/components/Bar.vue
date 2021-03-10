@@ -1,18 +1,27 @@
 <template>
-  <b-container>
-    <b-row class="flex-column">
-      <b-col>
-        <h1 class="text-center">REACH YOUR GREATER HEALTH POTENTIAL</h1>
-      </b-col>
-      <b-col class="text-center">
-        <b-img :src="require('../assets/images/arrow.png')"></b-img>
-      </b-col>
-    </b-row>
-  </b-container>
+  <div class="bar--section">
+    <h1 class="bar--section--title text-center">
+      REACH YOUR GREATER HEALTH POTENTIAL
+    </h1>
+    <b-img
+      class="d-block mx-auto my-4"
+      :src="require('../assets/images/arrow.png')"
+    ></b-img>
+  </div>
 </template>
 
 <script>
 export default {};
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+@use '../assets/scss/_mixins.scss' as *;
+
+.bar--section {
+  &--title {
+    @include gradient-one;
+    padding: 20px;
+    color: var(--primary-clr);
+  }
+}
+</style>
