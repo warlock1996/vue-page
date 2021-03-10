@@ -4,15 +4,15 @@
 
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav>
-        <b-nav-item href="#">HOME</b-nav-item>
-        <b-nav-item href="#">SHOP</b-nav-item>
-        <b-nav-item href="#">BENEFITS</b-nav-item>
-        <b-nav-item href="#">ABOUT</b-nav-item>
-        <b-nav-item href="#">EXERCISES</b-nav-item>
-        <b-nav-item href="#">CONTACT US</b-nav-item>
+        <b-nav-item href="HOME">HOME</b-nav-item>
+        <b-nav-item href="SHOP">SHOP</b-nav-item>
+        <b-nav-item href="BENEFITS">BENEFITS</b-nav-item>
+        <b-nav-item href="ABOUT">ABOUT</b-nav-item>
+        <b-nav-item href="EXERCISES">EXERCISES</b-nav-item>
+        <b-nav-item href="CONTACT">CONTACT US</b-nav-item>
       </b-navbar-nav>
 
-      <b-navbar-nav class="ml-auto">
+      <b-navbar-nav class="ml-auto align-items-center">
         <b-nav-item href="#"
           ><b-img
             :src="require('../assets/icons/cart.png')"
@@ -37,4 +37,20 @@
 export default {};
 </script>
 
-<style scoped></style>
+<style lang="scss" scoped>
+.navbar {
+  &-collapse {
+    ul {
+      li {
+        a.nav-link {
+          color: var(--primary-clr);
+          &:hover,
+          &:active {
+            color: var(--secondary-clr);
+          }
+        }
+      }
+    }
+  }
+}
+</style>

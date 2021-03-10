@@ -1,0 +1,52 @@
+@use 'sass:map';
+$primary-clr: rgb(255, 255, 255);
+$primary-clr-dark: rgb(0, 1, 0);
+$secondary-clr: rgb(255, 0, 0);
+
+$section-bg-clr: gray;
+$section-bg-clr-light: lightgray;
+
+$grad-clr-from: rgb(255, 136, 33);
+$grad-clr-mid: rgb(255, 77, 26);
+$grad-clr-to: rgb(255, 17, 19);
+
+$b-radius: 2px;
+$fs-xl: 4rem;
+$fs-lg: 24px;
+$fs-md: 18px;
+$fs-sm: 14.49px;
+$ff: "Roboto";
+
+$box-padding: 15px;
+$opacity: 0.9;
+
+$custom-theme: (
+  primary-clr: rgb(255, 255, 255),
+  primary-clr-dark: rgb(0, 1, 0),
+  secondary-clr: rgb(255, 0, 0),
+  section-bg-clr: gray,
+  section-bg-clr-light: lightgray,
+  grad-clr-from: rgb(255, 136, 33),
+  grad-clr-mid: rgb(255, 77, 26),
+  grad-clr-to: rgb(255, 17, 19),
+  b-radius: 2px,
+  fs-xl: 4rem,
+  fs-lg: 24px,
+  fs-md: 18px,
+  fs-sm: 14.49px,
+  ff: "Roboto",
+  box-padding: 15px,
+  opacity: 0.9,
+);
+
+:root {
+  @each $key, $val in $custom-theme {
+    --#{$key}: #{$val};
+  }
+}
+
+$body-bg: map.get($custom-theme, --primary-clr);
+$secondary: map.get($custom-theme, --secondary-clr);
+
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+@import "node_modules/bootstrap-vue/src/index.scss";

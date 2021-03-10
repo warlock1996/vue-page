@@ -1,5 +1,5 @@
 <template>
-  <b-container fluid>
+  <b-container class="features--section" fluid>
     <b-row>
       <b-col md="3">
         <b-img :src="require('../assets/images/18.png')"></b-img>
@@ -49,4 +49,8 @@
 export default {};
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.features--section {
+  background-color: var(--section-bg-clr);
+}
+</style>

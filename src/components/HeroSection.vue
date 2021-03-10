@@ -9,8 +9,8 @@
       class="hero--section--content text-center flex-column align-self-center"
     >
       <b-col>
-        <h1>
-          WHY WORK <i>OUT...</i> WHEN YOU CAN <u><i>PLAY IN!</i></u>
+        <h1 class="hero--section--content--title mx-auto">
+          WHY WORK <i>OUT...</i> WHEN YOU CAN <i><u>PLAY IN!</u></i>
         </h1>
       </b-col>
       <b-col>
@@ -41,6 +41,17 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("../assets/images/BG.png");
+
+  &--content {
+    &--title {
+      width: 60%;
+      color: var(--primary-clr);
+      font-size: var(--fs-xl);
+      i {
+        color: var(--secondary-clr);
+      }
+    }
+  }
   &--navbar {
     flex-grow: 0.5;
   }

@@ -1,0 +1,20 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+body {
+  font-family: $ff;
+}
+
+.btn {
+  @include gradient-one;
+  border-radius: $b-radius;
+  box-shadow: none;
+  border: none;
+}
+
+%title-box {
+  @include gradient-two;
+  padding: var(--box-padding);
+  opacity: var(--opacity);
+  color: var(--primary-clr);
+}

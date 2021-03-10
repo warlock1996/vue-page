@@ -24,12 +24,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@use "../assets/scss/main.scss";
+
 .movement--card {
   width: 100%;
   position: relative;
   &--image--text {
     position: absolute;
-    top: 10px;
+    top: 8px;
+    @extend %title-box;
   }
   &--image--button {
     position: absolute;

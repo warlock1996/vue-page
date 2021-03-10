@@ -1,8 +1,8 @@
 <template>
-  <b-container fluid>
+  <b-container fluid class="movement--section">
     <b-row>
       <b-col>
-        <h1 class="text-center">JOIN THE MOVEMENT</h1>
+        <h1 class="movement--section--title text-center">JOIN THE MOVEMENT</h1>
       </b-col>
     </b-row>
     <b-row>
@@ -39,4 +39,11 @@ export default {
   },
 };
 </script>
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.movement--section {
+  background-color: var(--section-bg-clr);
+  &--title {
+    color: var(--primary-clr);
+  }
+}
+</style>

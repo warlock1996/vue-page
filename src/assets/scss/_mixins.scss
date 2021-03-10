@@ -1,0 +1,19 @@
+@use 'variables' as *;
+
+@mixin gradient-one() {
+  background-image: linear-gradient(
+    90deg,
+    $grad-clr-from 0%,
+    $grad-clr-mid 35%,
+    $grad-clr-to 100%
+  );
+}
+
+@mixin gradient-two() {
+  background-image: linear-gradient(
+    -90deg,
+    $grad-clr-from 0%,
+    $grad-clr-mid 35%,
+    $grad-clr-to 100%
+  );
+}
