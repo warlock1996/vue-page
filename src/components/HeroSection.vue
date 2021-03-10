@@ -33,6 +33,22 @@ export default {
   components: {
     NavBar,
   },
+  mounted() {
+    document
+      .querySelector(".arrow-animate")
+      .animate(
+        [
+          { transform: "translateY(0)" },
+          { transform: "translateY(50px)" },
+          { transform: "translateY(0)" },
+        ],
+        {
+          duration: 2000,
+          easing: "ease-in-out",
+          iterations: Infinity,
+        }
+      );
+  },
 };
 </script>
 
@@ -60,10 +76,8 @@ export default {
     flex-grow: 0.2;
   }
 }
-</style>
 
-<style>
-.arrow-animate {
+.arrowanimate-active {
   animation: arrownim 2s infinite;
 }
 
