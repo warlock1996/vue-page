@@ -38,7 +38,7 @@ export default {
 
 <style lang="scss" scoped>
 .hero--section {
-  height: 600px;
+  min-height: 600px;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("../assets/images/BG.png");
